@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie Lenoir – Agent IA & RAG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c508cf70e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Julie Lenoir</h1>
+        <p class="subtitle">Développeuse Web & Agent IA avec RAG</p>
+    </header>
+
+    <main>
+        <p>Bienvenue sur mon portfolio dédié à mon projet d'agent conversationnel intelligent qui répond à toutes vos
+            questions... sur moi !</p>
+        <button class="cta" onclick="document.querySelector('.open-icone').click()">Lancer l'agent IA</button>
+
+        <section class="features">
+            <div class="feature">
+                <h3>FAQ Personnelle</h3>
+                <p>Formation, expériences, parcours : l'agent répond à toutes les questions classiques sur mon profil.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Recherche par Documents</h3>
+                <p>Basé sur le RAG, l'agent peut extraire des réponses de mon CV, de projets ou de documents personnels
+                    indexés.</p>
+            </div>
+            <div class="feature">
+                <h3>Stack IA Moderne</h3>
+                <p>Rasa, LangChain, ChromaDB, FastAPI et embeddings pour un agent performant et personnalisé.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Julie Lenoir. Tous droits réservés.
+    </footer>
+
+    <!-- Icône pour ouvrir l'agent IA -->
+    <div class="open-icone">
+        <i class="fa-solid fa-comments fa-2xl" style="color: #fff;"></i>
+    </div>
+
+    <!-- Fenêtre agent IA -->
+    <div class="agent-container">
+        <div id="agent-header">
+            <div class="logo">
+                <img class="imgLogo" src="img/julie-PP-jaune.png">
+            </div>
+            <div class="header-text">
+                <strong>Des questions sur mon profil ?</strong><br />
+                Interroge mon agent IA personnel
+            </div>
+            <button id="agent-close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+        </div>
+
+        <div id="zone-messages">
+            <div class="agent-messages" id="agent-message-un">
+                <img src="img/julie-PP-jaune.png" alt="avatar" class="agent-icon" />
+                <div class="agent-message">
+                    Bonjour ! Pose-moi n'importe quelle question sur Julie : son parcours, ses compétences, ses projets
+                    !
+                </div>
+            </div>
+            <div class="message-list"></div>
+            <div id="user-input">
+                <textarea placeholder="Pose ta question ..." id="answer-input" rows="4"></textarea>
+                <button id="send-btn"><i class="fa-solid fa-paper-plane fa-xxl" style="color: #6C63FF;"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="agentIa.js"></script>
+</body>
+
+</html>

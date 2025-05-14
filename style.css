@@ -1,0 +1,487 @@
+/* --------- TYPO & COULEURS GLOBALES --------- */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #F9F9FB;
+    color: #1F2937;
+}
+
+
+
+header {
+    background-color: #6C63FF;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.5rem;
+}
+
+p.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.cta {
+    background-color: #00C9A7;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #00b196;
+}
+
+section.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.feature {
+    flex: 1 1 250px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.feature h3 {
+    margin-top: 0;
+    color: #6C63FF;
+}
+
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+/* --------- BOUTON FLOTTANT OUVERTURE --------- */
+
+.open-icone {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #6C63FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 8%;
+    left: 4%;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.icone-open {
+    display: none;
+}
+
+/* --------- FENÊTRE DE L’AGENT --------- */
+
+.agent-container {
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.agent-container.open {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+    pointer-events: auto;
+    visibility: visible;
+    width: 35%;
+    height: 90vh;
+    border: 2px solid #00C9A7;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    left: 20px;
+    bottom: 0;
+    z-index: 1000;
+    scroll-behavior: smooth;
+    margin-bottom: 3em;
+    justify-content: space-between;
+}
+
+/* --------- EN-TÊTE DE L’AGENT --------- */
+
+#agent-header {
+    background-color: #6C63FF;
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    font-size: 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 15%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 100%;
+    height: auto;
+}
+
+#agent-close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+    width: 20%;
+}
+
+.header-text {
+    width: 80%;
+    text-align: center;
+}
+
+/* --------- ZONE MESSAGES --------- */
+
+#zone-messages {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 1em;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.message-list {
+    flex: 1;
+}
+
+.agent-messages,
+.user-messages {
+    padding: 0.1em;
+    display: flex;
+    align-items: flex-start;
+    gap: 2%;
+    background-color: white;
+    margin: 1em 0;
+    max-width: 95%;
+    word-break: break-word;
+}
+
+.agent-icon {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+.agent-message {
+    border: 1px solid #6C63FF;
+    color: #1F2937;
+    border-radius: 10px;
+    padding: 0.6em;
+    min-height: 2.5em;
+    width: 92%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.user-message {
+    align-self: flex-end;
+    border: 1px solid #00C9A7;
+    border-radius: 10px;
+    padding: 0.6em 1em;
+    max-width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 8%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* --------- BOUTONS FAQ / RAG --------- */
+
+#user-choice {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+#faq-btn,
+#rag-btn {
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0.5em 0.5em;
+    width: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#faq-btn {
+    background-color: #00C9A7;
+    color: white;
+    border: 1px solid #00C9A7;
+}
+
+#faq-btn:hover,
+#faq-btn:active {
+    background-color: white;
+    color: #00C9A7;
+}
+
+#rag-btn {
+    background-color: #6C63FF;
+    color: white;
+    border: 1px solid #6C63FF;
+}
+
+#rag-btn:hover,
+#rag-btn:active {
+    background-color: white;
+    color: #6C63FF;
+}
+
+/* --------- SPINNER --------- */
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #00C9A7;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* --------- INPUT UTILISATEUR --------- */
+
+#user-input {
+    display: flex;
+    border: 1px solid #00C9A7;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 40%;
+    padding: 0.5em;
+    margin: 0.5em 0.5em;
+    gap: 0.5rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+h5 {
+    margin: 0.2em;
+}
+
+#user-input textarea {
+    flex: 1;
+}
+
+#answer-input-rag,
+#answer-input-faq {
+    width: 95%;
+    height: 100%;
+    border: none;
+}
+
+#answer-input-rag:focus,
+#answer-input-faq:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#send-btn {
+    border: none;
+    border-radius: 50%;
+    width: 8%;
+    margin-left: 6px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+
+/* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px) {
+    .agent-container.open {
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        border-radius: 0;
+    }
+
+    #faq-btn,
+    #rag-btn {
+        width: 100%;
+    }
+
+    .open-icone {
+        width: 60px;
+        height: 60px;
+        bottom: 5%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .agent-container.open {
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        bottom: 10%;
+    }
+
+    #agent-header {
+        font-size: 16px;
+    }
+
+    .header-text {
+        font-size: 14px;
+    }
+
+    .user-message,
+    .agent-message {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .agent-container.open {
+        width: 95%;
+        height: 90%;
+        left: 2.5%;
+        bottom: 5%;
+    }
+
+    #agent-header {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .header-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .avatar,
+    .agent-icon {
+        width: 24px;
+    }
+
+    .user-message,
+    .agent-message {
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    #faq-btn,
+    #rag-btn {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #user-choice {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    #user-input {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #send-btn {
+        width: 100%;
+        margin: 0.5em 0 0 0;
+    }
+
+    #answer-input-faq,
+    #answer-input-rag {
+        width: 100%;
+    }
+
+    #switch-type {
+        position: sticky;
+        bottom: 0;
+        background-color: white;
+        border-top: 1px solid #ccc;
+    }
+}
