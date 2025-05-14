@@ -16,8 +16,9 @@ Trouver un poste en développement web à partir d’**août 2025**, dans une é
 
 ## 🧰 Projets à découvrir
 
-- `agent-ia-faq-rag` – chatbot avec mémoire + base documentaire
+- `agent-ia-faq-rag` – agent conversationnel avec mémoire + base documentaire pour évoquer mon parcours
 - `projets d'apprentissage` développé pendant les cours
+- `premier portfolio`
 
 ## 📫 Me contacter
 
