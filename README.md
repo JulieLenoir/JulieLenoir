@@ -57,28 +57,6 @@ Développer un agent conversationnel hybride combinant :
 | Questions sur mon parcours                                     | Formation, compétences, projets |
 ---
 
-## Structure du projet
-agent_ia_vs/
-├── app/
-│ ├── add_embeddings_chromadb.py # vectorisation des documents
-│ ├── agent_logic.py # logique de décision (Rasa + RAG)
-│ └── core/agent_logic.py
-├── config/
-│ └── .env 
-├── data/
-│ ├── chroma_db/ # base vectorielle
-│ └── documents/ # documents vectorisés
-├── rasa_bot/
-│ ├── data/nlu.yml # intents
-│ ├── domain.yml # réponses
-│ ├── rules.yml # règles conversationnelles
-│ ├── config.yml, stories.yml, etc.
-├── requirements.txt
-└── venv/
-
-
----
-
 ## Déploiement local
 
 ### Prérequis
