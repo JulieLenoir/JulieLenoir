@@ -85,6 +85,7 @@ rasa run --enable-api
 cd ../app/core
 python agent_logic_with_mistral.py
 
+---
 ### Fonctionnement
 USER QUESTION
     ↓
