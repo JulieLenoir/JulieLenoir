@@ -86,7 +86,8 @@ cd ../app/core
 python agent_logic_with_mistral.py
 
 ---
-### Fonctionnement
+
+## Fonctionnement
 USER QUESTION
     ↓
 [RASA] → si intent connu → réponse FAQ
@@ -94,8 +95,9 @@ USER QUESTION
 [RAG] → recherche sémantique dans les documents vectorisés
     ↓
 [LLM] → génération d’une réponse à partir du contexte
+---
 
-### Auteure
+## Auteure
 Julie Lenoir
 Développeuse Web (CDA 2025) – Alternance @ CEFii
 📫 julielenoir.devweb@gmail.com
