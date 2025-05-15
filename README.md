@@ -26,7 +26,9 @@ Trouver un poste en développement web à partir d’**août 2025**, dans une é
 📍 Cholet / Angers / Nantes  
 ✉️ julielenoir.devweb@gmail.com
 
-# Agent IA – Julie Lenoir
+# Agent IA – Julie Lenoir  
+
+*en cours de développement*  
 
 ## Objectif
 
