@@ -10,17 +10,17 @@ Je travaille avec :
 
 Je forme également d'autres développeurs aux bases du web (HTML, CSS, JS, PHP).
 
-## 🔍 Objectif
+## Objectif
 
 Trouver un poste en développement web à partir d’**août 2025**, dans une équipe où je pourrai continuer à apprendre et contribuer à des projets concrets.
 
-## 🧰 Projets à découvrir
+## Projets à découvrir
 
 - `agent-ia-faq-rag` – agent conversationnel avec mémoire + base documentaire pour évoquer mon parcours
 - `projets d'apprentissage` développé pendant les cours
 - `premier portfolio`
 
-## 📫 Me contacter
+## Me contacter
 
 [🔗 LinkedIn](https://www.linkedin.com/in/julie-lenoir-renou)  
 📍 Cholet / Angers / Nantes  
