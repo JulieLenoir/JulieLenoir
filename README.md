@@ -65,7 +65,7 @@ Développer un agent conversationnel hybride combinant :
 
 - WSL ou Ubuntu avec **Python 3.10**
 - Git, pip, VS Code
-- Accès à l’API Mistral (via clé dans `.env`)
+- Accès à l’API Mistral (via Ollama en local)
 
 ### Lancer l’agent
 
@@ -85,7 +85,7 @@ rasa run --enable-api
 
 # Lancer le moteur RAG
 cd ../app/core
-python agent_logic_with_mistral.py
+python agent_logic.py
 
 ---
 
