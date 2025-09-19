@@ -1,7 +1,10 @@
 # Julie Lenoir – Développeuse Web
 
-Actuellement en alternance (Bac+3 CDA) au CEFii, je conçois des outils web pour une plateforme e-learning et développe un agent conversationnel IA (FAQ + RAG).
-
+Développeuse web & web mobile (Bac+3 CDA), j’ai conçu des outils en PHP et Python, dont un agent
+conversationnel basé sur l’IA (RAG, LLM, FastAPI). Très curieuse et dotée d’une grande capacité d’adaptation, je
+prends plaisir à explorer de nouvelles techno et à m’ajuster aux équipes comme aux projets. J’aime allier
+apprentissage continu et bonnes pratiques concrètes, et je recherche un poste où je pourrai contribuer tout en
+développant encore mes compétences.
 Je travaille avec :
 - **Python** (Rasa, embeddings, ChromaDB, API Mistral)
 - **PHP**, HTML, CSS, JavaScript
